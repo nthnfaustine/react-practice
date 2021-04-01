@@ -28,7 +28,6 @@ class App extends Component {
         const filteredRobots = this.state.robots.filter(robot => {
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
-        console.log('test');
 
         if(this.state.robots.length === 0){
             return (
